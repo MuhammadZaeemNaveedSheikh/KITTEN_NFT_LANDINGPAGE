@@ -1,0 +1,92 @@
+.faq {
+  margin-bottom: 55px;
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgba(215, 219, 255, 0) 74.48%,
+    rgba(215, 219, 255, 0.5) 100%
+  );
+
+  &__wrapper {
+    padding-top: 130px;
+    margin-top: 123px;
+
+    @include for-tablet {
+      padding-top: 50px;
+    }
+  }
+
+  &__container {
+    padding-bottom: 200px;
+    position: relative;
+    z-index: 10;
+    width: 586px;
+    margin: auto;
+
+    @include for-tablet {
+      padding: 0 20px 100px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 36px;
+    line-height: 115%;
+    color: $secondary-color;
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    color: $common-color;
+    line-height: 150%;
+  }
+
+  &__item {
+    margin-bottom: 40px;
+
+    &-title {
+      font-weight: 600;
+      font-size: 24px;
+      margin-bottom: 14px;
+    }
+  }
+
+  &__kat-img {
+    position: absolute;
+    right: -57px;
+    bottom: -50px;
+    transform: translateX(100%);
+
+    @include for-small-desktop {
+      transform: translate(0);
+    }
+
+    @include for-laptop {
+      right: 0;
+      width: 200px;
+    }
+
+    @include for-tablet {
+      width: 150px;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+
+    &-ellipse-left {
+      position: absolute;
+      top: -40px;
+      left: 0;
+    }
+
+    &-ellipse-right {
+      position: absolute;
+      left: 50%;
+    }
+  }
+}
